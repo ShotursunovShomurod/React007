@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <>
             <div className='bg-slate-100 py-[40px] mt-36'>
-                <div className="container">
+                <div className="container mx-auto">
                     <div>
                         <div className=''>
                             <img src={logo} alt="" />

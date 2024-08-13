@@ -6,7 +6,6 @@ import rasm4 from '../../assets/rasm4.png'
 import rasm5 from '../../assets/rasm5.png'
 import rasm6 from '../../assets/rasm6.png'
 import rasm7 from '../../assets/rasm7.png'
-import rasm8 from '../../assets/rasm8.png'
 import rasm9 from '../../assets/rasm9.png'
 import rasm10 from '../../assets/rasm10.png'
 
@@ -65,8 +64,8 @@ const data = [
 ]
 
 
-const laylo = data?.map((el) => (
-    <div key={el.id} className="hover:delay-150	 hover:shadow-lg   cursor-pointer  w-[45%] sm:w-[30%] md:w-[23%] lg:w-[18%] flex gap-[10px] py-3 flex-col items-center">
+const CategoryItem = data?.map((el) => (
+    <div key={el.id} className="cursor-pointer  w-[45%] sm:w-[30%] md:w-[23%] lg:w-[18%] flex gap-[10px] py-3 flex-col items-center">
         <div className=''>
             <img src={el.url} alt="" />
         </div>
@@ -79,12 +78,12 @@ const laylo = data?.map((el) => (
 const Categoty = () => {
     return (
         <div>
-            <div className="container">
+            <div className="container mx-auto">
                 <div className='flex  items-end mb-8'>
                     <h2 className='font-extrabold text-4xl'>Популярные категории</h2>
                     <p className=''>Все категории -</p>
                 </div>
-                <div className='flex flex-wrap gap-[18.7px] justify-between mt-[61px] mb-[100px]'>{laylo}</div>
+                <div className='flex flex-wrap gap-[18.7px] justify-between mt-[61px] mb-[100px]'>{CategoryItem}</div>
             </div>
 
         </div>
