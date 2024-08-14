@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import logo from "../../assets/logo.svg";
 
+
+
 const API_URL = "https://dummyjson.com";
 
 const Header = () => {

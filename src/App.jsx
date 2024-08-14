@@ -6,6 +6,7 @@ import About from './pages/About/About'
 import Dostavka from './pages/Dostavka/Dostavka'
 import Contact from './pages/Contact/Contact'
 import Footer from './components/Footer/Footer'
+import NotFound from './pages/NotFound/NotFound'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="/About" element={<About/>}/>
         <Route path="/Dostavka" element={<Dostavka/>}/>
         <Route path="/Contact" element={<Contact/>}/>
+        <Route path='*' element={<NotFound/>}/> 
       </Routes>
       <Footer/>
     </>

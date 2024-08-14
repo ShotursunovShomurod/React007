@@ -129,7 +129,7 @@ const Mebels = () => {
             <div key={el.id}>
               <div className="mb-[19px]">
                 <img
-                  className=" duration-300 hover:scale-105 "
+                  className=" cursor-pointer duration-300 hover:scale-105 "
                   src={el.url}
                   alt=""
                 />
